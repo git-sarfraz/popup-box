@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="start()" class="btn1">Click Here</button>
+        <div class="pop_container" id="popup">
+            <div class="content">
+                <h1>hello!...</h1>
+                <p>This is popup box<br><br>click to close</p>
+                <button onclick="x()" class="btn">❌</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function start(){
+    var a=document.getElementById("popup");
+    a.style.display='flex';
+}
+function x(){
+    var b=document.getElementById("popup");
+    b.style.display='none';
+}
+    </script>
+</body>
+</html>
